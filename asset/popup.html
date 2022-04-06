@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .btn-outline {
+      background-color: transparent;
+      border: 1px solid #42b983;
+      border-radius: 8px;
+      text-align: center;
+      padding: 12px 30px;
+      max-width: 190px;
+      text-transform: uppercase;
+      color: #42b983;
+      font-weight: 600;
+    }
+
+    .btn-outline:hover {
+      cursor: pointer;
+      color: white;
+      background-color: #42b983;
+      box-shadow: 0 0 10px 0 rgb(66 185 131 / 20%) inset, 0 0 10px 4px rgb(66 185 131 / 20%);
+      transition: all .2s linear 0s;
+    }
+
+    .btn-outline:focus {
+      background-color: #42b983;
+      color: white;
+      box-shadow: 0 0 10px 0 rgb(66 185 131 / 20%) inset, 0 0 10px 4px rgb(66 185 131 / 20%);
+    }
+
+    .wrapper {
+      padding: 20px;
+      min-width: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="title">Auto fill google form</div>
+    <button id="get" class="btn-outline">
+      Get Result
+    </button>
+    <!-- <button id="fill" class="btn-outline">
+      Fill Form
+    </button> -->
+  </div>
+
+  <script src="./popup.js"></script>
+</body>
+
+</html>

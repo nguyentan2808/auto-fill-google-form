@@ -1,0 +1,49 @@
+{
+  "name": "Auto Google Form",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Auto Google Form - nguyentan2808",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "64": "icons/icon64.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "scripts": [
+      "asset/jquery.js",
+      "asset/background.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "cookies",
+    "activeTab",
+    "storage",
+    "unlimitedStorage",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_popup": "asset/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://docs.google.com/forms/*"
+      ],
+      "css": [
+        "asset/content.css"
+      ],
+      "js": [
+        "asset/jquery.js",
+        "asset/content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    "asset/*.svg",
+    "asset/*.png",
+    "icons/*.png"
+  ]
+}

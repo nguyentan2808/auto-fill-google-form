@@ -1,0 +1,26 @@
+.fbmfox-container {
+    background-color: white;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 120px;
+    position: fixed;
+    bottom: 250px;
+    right: 5px;
+    z-index: 999;
+}
+
+.fbmfox-button {
+    font-size: 16px;
+    border: 0px;
+    width: 95%;
+    height: 90%;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #00203fff;
+    color: white;
+    padding: 10px;
+}
